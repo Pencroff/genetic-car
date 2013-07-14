@@ -1,9 +1,9 @@
 define([
 	"ember",
-	"text!templates/applicationTmpl.html"
+	"hbs!templates/applicationTmpl"
 ], function(Ember, applicationTmpl) {
 	var ApplicationView = Ember.View.extend({
-		defaultTemplate: Ember.Handlebars.compile(applicationTmpl)
+		defaultTemplate: applicationTmpl
 	});
 	return ApplicationView;
 });

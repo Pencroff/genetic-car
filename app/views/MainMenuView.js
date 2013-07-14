@@ -5,10 +5,10 @@
  */
 define([
     "ember",
-    "text!templates/mainMenuTmpl.html"
+    "hbs!templates/mainMenuTmpl"
 ], function(Ember, mainMenuTmpl) {
     var MainMenuView = Ember.View.extend({
-        defaultTemplate: Ember.Handlebars.compile(mainMenuTmpl)
+        defaultTemplate: mainMenuTmpl
     });
     return MainMenuView;
 });

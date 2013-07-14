@@ -14,8 +14,14 @@ define({
         'bootstrap': {
             deps: ['jquery']
         },
+        handlebars : {
+            exports: 'Handlebars'
+        },
         underscore: {
             exports: "_"
+        },
+        hbs: {
+            deps: ['ember']
         }
     },
     paths: {
@@ -33,14 +39,12 @@ define({
         'bootstrap': 'lib/bootstrap-2.3.2',
         // requirejs-plugins
         'text': 'lib/requirejs-plugins/text-2.0.7',
-        'hbs': 'lib/requirejs-plugins/hbs-0.4.0',
-        'json2': 'lib/requirejs-plugins/hbs/json2',
-        'i18nprecompile': 'lib/requirejs-plugins/hbs/i18nprecompile',
+        'hbs': 'lib/requirejs-plugins/hbs',
         'async': 'lib/requirejs-plugins/async-0.1.1'
     },
     /*hbs plugin options*/
     hbs: {
-        disableI18n: true,
+        //prefixName: '', // if it needs
         templateExtension: "html"
     }
 });
