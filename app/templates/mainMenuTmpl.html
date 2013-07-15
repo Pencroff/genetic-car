@@ -5,12 +5,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="brand brand-g-car" href="#"><img src="content/img/atom-48.png"> Genetic cars</a>
+        <a class="brand brand-g-car" href="/"><img src="content/img/atom-48.png"> Genetic cars</a>
         <div class="nav-collapse collapse">
             <ul class="nav nav-g-car">
-                <li class="active"><a href="#">Simulation</a></li>
-                <li><a href="#">Visualization</a></li>
-                <li><a href="#">Evolution</a></li>
+                {{#linkTo 'simulation' tagName='li'}}{{#linkTo 'simulation'}}<i class="icon-dashboard"></i> Simulation{{/linkTo}}{{/linkTo}}
+                {{#linkTo 'visualization' tagName='li'}}{{#linkTo 'visualization'}}<i class="icon-picture"></i> Visualization{{/linkTo}}{{/linkTo}}
+                {{#linkTo 'evolution' tagName='li'}}{{#linkTo 'evolution'}}<i class="icon-rocket"></i> Evolution{{/linkTo}}{{/linkTo}}
             </ul>
         </div>
     </div>

@@ -3,7 +3,7 @@
  * Date: 13.07.2013
  * Time: 19:21
  */
-
+/*global define:true*/
 define([
     'views/ApplicationView',
     'views/MainMenuView',
@@ -11,8 +11,8 @@ define([
     'app/router',
     // extra lib
     'bootstrap'
-], function(ApplicationView, MainMenuView, ApplicationController, Router) {
-
+], function (ApplicationView, MainMenuView, ApplicationController, Router) {
+    'use strict';
     /*Module Pattern*/
     var App = {
         ApplicationView: ApplicationView,

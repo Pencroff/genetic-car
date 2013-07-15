@@ -4,8 +4,8 @@
  * Time: 7:49
  */
 define([
-    "ember",
-    "hbs!templates/mainMenuTmpl"
+    'ember',
+    'hbs!templates/mainMenuTmpl'
 ], function(Ember, mainMenuTmpl) {
     var MainMenuView = Ember.View.extend({
         defaultTemplate: mainMenuTmpl
